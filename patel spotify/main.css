@@ -1,0 +1,574 @@
+/* Main Spotify UI Styles */
+body {
+    font-family: 'montserrat', sans-serif;   
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+}
+
+.main{  
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem 0.5rem;
+}
+
+.sidebar{
+    background-color: #000;
+    width: 420px;
+    border-radius: 1rem;
+    margin: 0.5rem 0rem;
+}
+
+.main-content{
+    background-color: #121212;
+    flex:1;
+    border-radius: 1rem;
+    overflow: auto;
+    margin-left: 0.5rem;
+}
+
+.music-player{
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 72px;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.main-logo{
+    padding: 0.1rem 0.9rem;
+    line-height: 40px;
+}
+
+.main-logo i{
+    font-size: 1.5rem;
+}
+
+.main-logo a{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.nav{
+    background-color: #121212;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    justify-content: center;      
+    padding: 0.3rem 0.75rem; 
+}
+
+.nav-option{
+    line-height: 40px;
+    opacity: 0.7;
+    padding: 0.3rem 0.9rem;
+}
+
+.nav-option i{
+    cursor: pointer;
+    font-size: 1.25rem;
+}
+
+.nav-option a{
+    font-size: 1rem;  
+    font-weight: 600;
+    margin-left: 0.8rem;
+}
+
+.nav-option:hover{
+    opacity: 1;
+}
+
+.library{
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    margin-top: 0.5rem;
+}
+
+.option{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lib-option img{
+    cursor: pointer;
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.lib-option{
+    padding: 0.5rem 0.75rem;
+    margin-left: 0.8rem;
+}
+
+.icons{
+    padding: 0.5rem 0.75rem;
+}
+
+.icons i{
+    cursor: pointer;
+    font-size: 1.25rem;
+    opacity: 0.7;
+    margin-right: 0.8rem;
+}
+
+.icons i:hover{
+    opacity: 1;
+}
+
+.boxes{
+    height: 420px;
+}
+
+.lib-box{
+    background-color: #232323;
+    height: 8rem;
+    border-radius: 1rem;
+    margin: 0.5rem 0.5rem;
+    padding: 0.55rem 1.25rem;
+}
+
+.box-p1{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.box-p2{
+    font-size: 0.85rem;
+    font-weight: 600;
+    opacity: 0.85;
+}
+
+.badge{
+    font-size: 0.87rem;
+    font-weight: 700;
+    height:2rem;
+    border-radius: 110px;
+    padding: 0.25rem 1rem;
+    border: none;
+    margin: 0.4rem 0.25rem;
+}
+
+.badge:hover{
+    transform: scale(1.05);
+}
+
+.sticky-nav{
+    background-color: #101010;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.div1,.div2{
+    margin: 0.5rem 1rem;
+}
+
+.div2{
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#be{
+    opacity: 0.6;
+    color:#232323;
+    width: 2.25rem;
+    height: 2.25rem;                
+    border-radius: 50%;
+    margin: 0.35rem;
+    cursor: pointer;
+    border: none;
+    background-color: white;
+}
+
+.navb{
+    font-weight: 700;
+}
+
+@media (max-width:1000px){
+    .hide{
+        display: none;
+    }
+}
+
+.cards{
+    padding: 0rem 1.5rem;
+}
+
+.card-container{
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: #191919;
+    width: 200px;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.card img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.card-title{
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.card-info{
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+.opt{
+    display: flex;
+    height: 200px;
+    align-content: center;
+    width: 60%;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.cap{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    line-height: 30px;
+    opacity: 0.7; 
+    cursor: pointer;     
+}
+
+.reach-out{
+    display: flex;
+}
+
+.socmed{
+    display: flex;
+    height: 200px;
+    align-content: center;
+    justify-content: end;
+    flex: 1;
+    margin-top: 3rem;
+    padding-left: 11rem;
+}
+
+.socmed a{
+    margin: 0 1rem;
+    font-size: 1.25rem;
+    opacity: 0.8;
+}
+
+.socmed a i:hover{
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.footer{
+    margin-top: 1rem;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.line{
+    height: 40px;
+    width: 95%;
+    border-top: 1px solid rgb(255, 255, 255,0.5);
+}
+
+.copyr{
+    border: 1 px solid white;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.ab{
+    display: flex;
+    width: 95%;
+}
+
+.reach-lib{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.reach-items{
+    font-size: 1rem;
+    color: #fff;
+    opacity: 0.7;
+}
+
+.reach-items:hover{
+    opacity: 1;
+    color: white;
+}
+
+.r{
+    flex: 1;
+    display: flex;
+    justify-content: end;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.opt ul li:hover{
+    text-decoration: black solid underline;
+    opacity: 1;
+}
+
+sup{
+    font-size: 0.5rem;
+}
+
+.music-player{
+    display: flex;
+}
+
+.album{
+    width: 25%;
+}
+
+.player{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.player-control{
+    padding-top: 0.6rem;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.control{
+    flex: 1;
+}
+
+.player-control button{
+    margin: 0rem 0.5rem;
+    height: 32px;
+    width: 40px;
+    border: none;
+    background-color: black;
+}
+
+.A,.E{
+    height: 18px;
+    width: 18px;
+    opacity: 0.4;
+}
+
+.E:hover{
+    opacity:1;
+}
+
+.A:hover{
+    opacity: 1;
+}
+
+.B,.D{
+    height: 18px;
+    width: 18px;
+    opacity: 0.7;
+}
+
+.D:hover{
+    opacity: 1;
+}
+
+.B:hover{
+    opacity: 1;        
+}
+
+.C{
+    height: 32px;
+    width: 32px;
+}
+
+.progress-bar{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bar{
+    width: 546px;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.bar::-webkit-slider-runnable-track{
+    background-color: ghostwhite;
+    height: 0.2rem;
+    border-radius: 1rem;
+}
+
+.bar::-webkit-slider-thumb{
+    margin-top: -6px;
+}
+
+.album{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.album img{
+    height: 60px;
+    width: 60px;
+    padding: 0.4rem 1rem 0.4rem 0.2rem;
+}
+
+.album-para{
+    display: flex;
+    flex-direction: column;
+}
+
+.album-para p{
+    line-height: 10px;
+}
+
+.p1{
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+}
+
+.p2{ 
+    font-size: 0.6rem;
+    opacity: 0.6;
+    margin-top: 0.2rem;
+}
+
+.icon-div{
+    margin: 1rem;
+}
+
+/* Login Page Styles */
+.login-page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spotify-interface {
+    display: none; /* Hide main interface initially */
+}
+
+.login-container {
+    background-color: #121212;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 350px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.05);
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.btn {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #1db954;
+    border: none;
+    border-radius: 2rem;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #1ed760;
+}
+
+.signup {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.signup a {
+    color: #1db954;
+    text-decoration: none;
+}
+
+.signup a:hover {
+    text-decoration: underline;
+}
+
+.spotify-logo {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.spotify-logo i {
+    font-size: 2.5rem;
+    color: #1db954;
+}
+
+
+.fa-regular:hover{
+    background-color: red;
+    border-radius: 50%;
+}
